@@ -1,35 +1,35 @@
-def permute():
+def permute(n, s, a):
     ''' 
-    Returns the permutation if you can append several elements to the array
-    a, that their sum equals S and the result will be a permutation. Return NO 
+    Returns YES if you can append several elements to the array
+    a, that their sum equals S and the resultant array is a permutation. Returns NO 
     otherwise.
 
     Parameters:
-    - None
+    - n : Lenght of array a
+    - s : Sum of missing numbers of permutation
+    - a : Known numbers of permutation
     
     Constraints:
-    - 1 <= m <=50
-    - 1 <= S <=1000
-    - 1 <= a_i <= 50
+    - 1 <= n <= 100
+    - 1 <= s <= 10000
+    - 1 <= a_i <= 1000
     '''
-
-    n, s = map(int, input().split())
-    a = [int(x) for x in input().split()]
     s += sum(a)
     sm = 0
-    cnt = 0
-    new = []
     for i in range(1, s + 1):
+        sm += i
         if sm >= s:
             break
-        sm += i
-        
-        new.append(i)
-        cnt = i
-    if sm != s or max(a) > cnt or cnt <= n:
+    if sm != s:
         return "NO"
     else:
-        return new
-if __name__ == "__main__":
-    permute()
-        
+        return "YES"
+
+T = int(input())
+f = []
+for i in range(T):
+    n,s = [int(i) for i in input().split()]   
+    lst = [int(i) for i in input().split()]
+    ans = permute(n,s,lst)
+    print(ans)   
+    f.append(ans)
