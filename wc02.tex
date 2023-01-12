@@ -42,9 +42,10 @@
 
     \paragraph{Task}
     \begin{itemize}
-        \item Implement solution for the Polycarp's problem in the accompanying file,  \texttt{permutation.py}.
-              We wish to know if the \textbf{lost permutation} exists, i.e., if you can append several numbers to the array \textbf{a}, which sum to $\mathbf{S}$ exactly and the sequence will become a permutation. 
-
+        \item Implement the function, \texttt{permute}, in the accompanying file,  \texttt{permutation.py},
+        that returns the \textbf{lost permutation} if you can append several elements to the array \textbf{a},
+        that their sum equals $\mathbf{S}$ and the result will be a permutation. Return \textbf{NO} otherwise.
+    
         \item A sequence of n numbers is called a permutation if it contains all integers from $1$ to $n$
               exactly once. For example, the sequences $[3,1,4,2], [1]$  and $[2,1]$ are permutations, but $[1,2,1]$,
               $[0,1]$ and $[1,3,4]$ — are not.
@@ -55,8 +56,10 @@
     \paragraph{Input}
 
     \begin{itemize}
-        \item The first line of the input contains a number $n$ denoting the number of testcases. This is followed by $n$ testcases, each containing two lines. We have integers $\mathbf{m}$ and $\mathbf{S}$ in the first line of testcase where $ 1 \leq m \leq 100 $,$1 \leq S \leq 10000 $.
-        \item For a testcase, $\mathbf{m}$ is the number of found elements and $\mathbf{S}$ the sum of forgotten numbers. The second line of each testcase contains $\mathbf{m}$ \textbf{different integers} $a_1,a_2, \cdots, a_m$ where $1 \leq a_i \leq 100$ are the elements Polycarp managed to find.
+        \item The first line of the input contains a number $n$ denoting the number of testcases. This is followed by $n$ testcases, each containing two lines.
+        \item The first line of each test case contains two integers $\mathbf{m}$ and $\mathbf{S}$ where $ 1 \leq m \leq 50 $,$1 \leq S \leq 1000 $ where $\mathbf{m}$ is the number of found elements
+        and the $\mathbf{S}$ sum of forgotten numbers.
+        \item The second line of each test case contains $\mathbf{m}$ \textbf{different integers} $a_1,a_2, \cdots, a_m$ where $1 \leq a_i \leq 50$ are the elements Polycarp managed to find.
     \end{itemize}
 
     \paragraph{Output}

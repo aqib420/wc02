@@ -25,11 +25,11 @@ def permute(m, s, a):
     else:
         return "YES"
 
-T = int(input())
-f = []
-for i in range(T):
-    m,s = [int(i) for i in input().split()]   
-    lst = [int(i) for i in input().split()]
-    ans = permute(m,s,lst)
-    print(ans)   
-    f.append(ans)
+# T = int(input())
+# f = []
+# for i in range(T):
+#     m,s = [int(i) for i in input().split()]   
+#     lst = [int(i) for i in input().split()]
+#     ans = permute(m,s,lst)
+#     print(ans)   
+#     f.append(ans)
