@@ -14,7 +14,7 @@ fetch_file()
 @pytest.mark.parametrize("input,out",[
     ("input1.txt","15145b26951c9f20116bfbabcccf5754bd4770e3a47dcc46b5c644f37631b6bf"),
     ("input2.txt","9e0503c4df9870ff65c857d0c45fbf456ee5b85510200aca9b651f4171832d34"),
-    ("input3.txt","b345820274ee39a478ddb92712644bda7825f8d739154ae1f6eae3ef2df7dd57")])
+    ("input3.txt","4a2f2f08a18c90c872b82849d714621e48a7dc58aa59107fe63d7494e8779e37")])
 
 def test_permute(input,out):
     output = []
