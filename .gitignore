@@ -7,10 +7,9 @@
 auto/
 solution/
 __pycache__/
-wc02.synctex.gz
-wc02.fdb_latexmk
-wc02.fls
+*.synctex.gz
+*.fdb_latexmk
+*.fls
 input1.txt
 input3.txt
 input2.txt
-.gitignore
