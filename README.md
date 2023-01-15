@@ -1,4 +1,4 @@
-# Weekly Challenge 02: Polycarp's Permutation
+# Weekly Challenge 02: Permutations
 # CS 412 Algorithms: Design and Analysis, Spring 2023
 ***
 
@@ -6,11 +6,12 @@ Each Weekly Challenge (WC) invites you to critically engage with the topics cove
 
 # Purpose
 
-This is the second WC. The purpose of this weekly challenges is to invite you to critically engage with the topics covered up to this week. 
+This WC invites you to think about permutations. Sorting is a common problem in computer science. The problem of sorting can be seen as choosing a single permutation from the set of all possible permutations of the given data.
 
 # Background
 
 To attempt and submit the task you will need
+- knowledge of arithmetic series as covered in high school mathematics
 - familiarity with python programming
 - familiarity with `pytest`
 - comfort with GitHub and LaTeX
@@ -18,6 +19,8 @@ To attempt and submit the task you will need
 # Grading
 
 Grading is done automatically by GitHub. It is recommended that you run `pytest test.py` locally and resolve any issues before `push`ing to your repository.
+
+We trust that you are honesty attempting the WC and will directly award your submission the score that GitHub shows for it. To verify, you may be randomly called in for a viva on your submission. If any of the members is unable to explain the submission or does not appear for the viva, the team will be considered unreliable. Unreliable teams will be awarded a 0 in the corresponding WC as well as all WC's since their last viva.
 
 # Task
 
