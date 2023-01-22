@@ -1,3 +1,5 @@
+# import ipdb; 
+# ipdb.set_trace()
 def permute(m, s, a):
     ''' 
     Returns YES if you can append several elements to the array
@@ -15,3 +17,37 @@ def permute(m, s, a):
     - 1 <= a_i <= 100
     '''
     pass
+    # m = int(input())
+    # s= int(input())
+    # a= int(input())
+    
+
+    lst=[]
+    for i in range(1,1000):
+        lst.append(i)
+    for j in a:
+        if j in lst:
+            lst.remove(j)
+        
+    
+    for i in range(len(lst)):
+        if s>0:
+            s=s-lst[i]
+            a.append(lst[i])
+        
+    # for i in range(len(lst)):
+    #     while s>0:
+    #         s=s-lst[i]
+    #         a.append(lst[i])
+    if len(a)<=1:
+        return("NO")
+    if s!=0:
+        return("NO")
+    else:
+        return ("YES")
+
+
+
+
+
+# print(permute(m,s,a))
